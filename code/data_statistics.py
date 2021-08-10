@@ -9,6 +9,8 @@
 # import lib here
 from data import Data_statistics
 import argparse
+
+
 def get_parser():
     # 实例化ArgumentParser
     parser = argparse.ArgumentParser(description='please input the path of dataset')
@@ -25,8 +27,9 @@ def get_parser():
                         default='.././experiment/statistics.xlsx',
                         help='path of excel file to save the statistics information')
 
-    args = parser.parse_args()
-    return  args
+    argvs = parser.parse_args()
+    return argvs
+
 
 if __name__ == '__main__':
     args = get_parser()
