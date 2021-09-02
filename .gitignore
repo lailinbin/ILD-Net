@@ -1,0 +1,8 @@
+# ignore datafile
+/2Dimg_data/data/*
+/2Dimg_data/label/*
+/3Dimg_data/*
+
+# ignore model_statedict
+/experiment/*.pkl
+/experiment/*.rar
